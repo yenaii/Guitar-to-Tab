@@ -1,0 +1,51 @@
+\doxysection{input.\+hpp}
+\hypertarget{input_8hpp_source}{}\label{input_8hpp_source}\index{include/input.hpp@{include/input.hpp}}
+\mbox{\hyperlink{input_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}minimp3.h"{}}\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_audio_decoder_ad0b6f26f55fc54e474b38ee0f7b7b786}{AudioDecoder}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_audio_decoder_1_1_audio_data}{AudioData}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::vector<float>\ \mbox{\hyperlink{struct_audio_decoder_1_1_audio_data_afebaefb181113ff3d1af17a22050c156}{samples}};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_audio_decoder_1_1_audio_data_a6edeed93b7514408d90f2c78b470c902}{sampleRate}};\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_audio_decoder_1_1_audio_data_ae0f074a9a57198513941674dcabaa411}{channels}};\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{struct_audio_decoder_1_1_audio_data_a6e0b77646a0f33a7c1d96b32246942a8}{totalSamples}};\ }
+\DoxyCodeLine{00028\ \ \ \ \ \};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_audio_decoder_ad0b6f26f55fc54e474b38ee0f7b7b786}{AudioDecoder}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{struct_audio_decoder_1_1_audio_data}{AudioData}}\ \mbox{\hyperlink{class_audio_decoder_aec8d79ddc6136daf37db0ed9cf66fad8}{loadMP3}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{struct\ }MP3DecoderDeleter\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ operator()(mp3dec\_t*\ decoder)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00043\ \ \ \ \ \};}
+\DoxyCodeLine{00044\ \ \ \ \ std::unique\_ptr<mp3dec\_t,\ MP3DecoderDeleter>\ mp3Decoder;\ }
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_audio_analyzer}{AudioAnalyzer}}\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{AmplitudeAnalysis}}\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ std::vector<float>\ \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis_a89c1949431f971dbe05f7bff4a7053ba}{amplitudes}};\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis_a261a17abcb6c7667164bc809494179a5}{maxAmplitude}};\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis_acc9ffd9fecadfc24273ebed3b8381bda}{minAmplitude}};\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis_acc39b719ec785e446e53ef77941a3688}{averageAmplitude}};\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ std::vector<float>\ \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis_ae8fc5b7875b33f128ffdd3363f31545a}{amplitudeSpectrum}};\ }
+\DoxyCodeLine{00063\ \ \ \ \ \};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{AmplitudeAnalysis}}\ \mbox{\hyperlink{class_audio_analyzer_aa5ad490b0033375167cee776a06810b8}{analyzeAmplitudes}}(\textcolor{keyword}{const}\ std::vector<float>\&\ samples,\ \textcolor{keywordtype}{int}\ channels);}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_analyzer_a2cb8c4f47d94fa2c38dec8a7b07f7643}{printAnalysisReport}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{AmplitudeAnalysis}}\&\ analysis);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_analyzer_a18f48209acd1c228987343e90febf80e}{visualizeWaveform}}(\textcolor{keyword}{const}\ std::vector<float>\&\ amplitudes,\ \textcolor{keywordtype}{size\_t}\ width\ =\ 80,\ \textcolor{keywordtype}{size\_t}\ height\ =\ 20);}
+\DoxyCodeLine{00079\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ computeSimpleSpectrum(\mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{AmplitudeAnalysis}}\&\ analysis);}
+\DoxyCodeLine{00085\ \};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_audio_processor}{AudioProcessor}}\ \{}
+\DoxyCodeLine{00092\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00098\ \ \ \ \ std::vector<float>\ \mbox{\hyperlink{class_audio_processor_a512dea968ecead970573d99e9e7ab19a}{processFile}}(\textcolor{keyword}{const}\ std::string\&\ inputFile);}
+\DoxyCodeLine{00099\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,65 @@
+\doxysection{Note\+Duration Struct Reference}
+\hypertarget{struct_note_duration}{}\label{struct_note_duration}\index{NoteDuration@{NoteDuration}}
+
+
+Структура, описывающая одну MIDI-\/ноту с её длительностью.  
+
+
+
+
+{\ttfamily \#include $<$frequency\+\_\+to\+\_\+midi.\+hpp$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{struct_note_duration_a48661554ebab4843e984142168ef74f0}{num}}
+\begin{DoxyCompactList}\small\item\em Порядковый номер ноты (используется для отслеживания позиции в меняющемся midi\+\_\+duration). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_note_duration_a56103df3e6e635369c4a4706fe0397b8}{midi}}
+\begin{DoxyCompactList}\small\item\em MIDI-\/номер ноты (-\/1 для паузы). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{struct_note_duration_af2cb1e790f7170fcb523b1c343c6c801}{duration}} = 0.\+0
+\begin{DoxyCompactList}\small\item\em Длительность ноты в секундах (или долях, в зависимости от контекста). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Структура, описывающая одну MIDI-\/ноту с её длительностью. 
+
+Используется для хранения информации о том, какая нота (в формате MIDI) играет в какой момент, и сколько шестнадцатых долей она длится. 
+
+\label{doc-variable-members}
+\Hypertarget{struct_note_duration_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_note_duration_af2cb1e790f7170fcb523b1c343c6c801}\index{NoteDuration@{NoteDuration}!duration@{duration}}
+\index{duration@{duration}!NoteDuration@{NoteDuration}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily \label{struct_note_duration_af2cb1e790f7170fcb523b1c343c6c801} 
+double Note\+Duration\+::duration = 0.\+0}
+
+
+
+Длительность ноты в секундах (или долях, в зависимости от контекста). 
+
+\Hypertarget{struct_note_duration_a56103df3e6e635369c4a4706fe0397b8}\index{NoteDuration@{NoteDuration}!midi@{midi}}
+\index{midi@{midi}!NoteDuration@{NoteDuration}}
+\doxysubsubsection{\texorpdfstring{midi}{midi}}
+{\footnotesize\ttfamily \label{struct_note_duration_a56103df3e6e635369c4a4706fe0397b8} 
+int Note\+Duration\+::midi}
+
+
+
+MIDI-\/номер ноты (-\/1 для паузы). 
+
+\Hypertarget{struct_note_duration_a48661554ebab4843e984142168ef74f0}\index{NoteDuration@{NoteDuration}!num@{num}}
+\index{num@{num}!NoteDuration@{NoteDuration}}
+\doxysubsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily \label{struct_note_duration_a48661554ebab4843e984142168ef74f0} 
+size\+\_\+t Note\+Duration\+::num}
+
+
+
+Порядковый номер ноты (используется для отслеживания позиции в меняющемся midi\+\_\+duration). 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{frequency__to__midi_8hpp}{frequency\+\_\+to\+\_\+midi.\+hpp}}\end{DoxyCompactItemize}

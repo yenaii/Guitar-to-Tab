@@ -1,0 +1,30 @@
+\doxysection{include/input.hpp File Reference}
+\hypertarget{input_8hpp}{}\label{input_8hpp}\index{include/input.hpp@{include/input.hpp}}
+
+
+Модули для декодирования MP3, анализа амплитуд и базовой обработки аудиосигнала.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include "{}minimp3.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_audio_decoder}{Audio\+Decoder}}
+\begin{DoxyCompactList}\small\item\em Декодирует MP3-\/файлы в PCM-\/амплитуды (float). \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_audio_decoder_1_1_audio_data}{Audio\+Decoder\+::\+Audio\+Data}}
+\begin{DoxyCompactList}\small\item\em Структура с результатом декодирования\+: сэмплы, частота, каналы, количество сэмплов. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_audio_analyzer}{Audio\+Analyzer}}
+\begin{DoxyCompactList}\small\item\em Анализирует амплитуды PCM-\/сигнала, вычисляет спектр, максимум, минимум и среднее. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{Audio\+Analyzer\+::\+Amplitude\+Analysis}}
+\begin{DoxyCompactList}\small\item\em Результаты анализа амплитуд\+: значения, максимум, минимум, среднее, спектр. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_audio_processor}{Audio\+Processor}}
+\begin{DoxyCompactList}\small\item\em Примерный пайплайн\+: декодирование, анализ, визуализация. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Модули для декодирования MP3, анализа амплитуд и базовой обработки аудиосигнала. 
+

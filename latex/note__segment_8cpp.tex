@@ -1,0 +1,36 @@
+\doxysection{src/note\+\_\+segment.cpp File Reference}
+\hypertarget{note__segment_8cpp}{}\label{note__segment_8cpp}\index{src/note\_segment.cpp@{src/note\_segment.cpp}}
+{\ttfamily \#include "{}note\+\_\+segment.\+hpp"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_note_segment}{Note\+Segment}} $>$ \mbox{\hyperlink{note__segment_8cpp_ab9c185e2077b27c6c16fdfe734772cfa}{extract\+\_\+note\+\_\+segments}} (const std\+::vector$<$ \mbox{\hyperlink{struct_pitch_result}{Pitch\+Result}} $>$ \&pitches, float sample\+Rate, float freq\+Tolerance)
+\begin{DoxyCompactList}\small\item\em Группирует последовательные окна с одинаковой (или близкой) частотой в сегменты. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{note__segment_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{note__segment_8cpp_ab9c185e2077b27c6c16fdfe734772cfa}\index{note\_segment.cpp@{note\_segment.cpp}!extract\_note\_segments@{extract\_note\_segments}}
+\index{extract\_note\_segments@{extract\_note\_segments}!note\_segment.cpp@{note\_segment.cpp}}
+\doxysubsubsection{\texorpdfstring{extract\_note\_segments()}{extract\_note\_segments()}}
+{\footnotesize\ttfamily \label{note__segment_8cpp_ab9c185e2077b27c6c16fdfe734772cfa} 
+std\+::vector$<$ \mbox{\hyperlink{struct_note_segment}{Note\+Segment}} $>$ extract\+\_\+note\+\_\+segments (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_pitch_result}{Pitch\+Result}} $>$ \&}]{pitches}{, }\item[{float}]{sample\+Rate}{, }\item[{float}]{freq\+Tolerance}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+
+
+Группирует последовательные окна с одинаковой (или близкой) частотой в сегменты. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitches} & Результаты pitch detection (\doxylink{struct_pitch_result}{Pitch\+Result}). \\
+\hline
+{\em sample\+Rate} & Частота дискретизации. \\
+\hline
+{\em freq\+Tolerance} & Порог для объединения частот (Гц). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор сегментов (частота, длительность). 
+\end{DoxyReturn}

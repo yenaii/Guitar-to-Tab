@@ -1,0 +1,20 @@
+\doxysection{midi\+\_\+to\+\_\+tabs.\+hpp}
+\hypertarget{midi__to__tabs_8hpp_source}{}\label{midi__to__tabs_8hpp_source}\index{include/midi\_to\_tabs.hpp@{include/midi\_to\_tabs.hpp}}
+\mbox{\hyperlink{midi__to__tabs_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <array>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{const}\ std::array<int,\ 6>\ \mbox{\hyperlink{midi__to__tabs_8hpp_ad8bd5dcd23eaaaf3850b1318a9ca4d43}{strings\_midi}}\ =\ \{64,\ 59,\ 55,\ 50,\ 45,\ 40\};}
+\DoxyCodeLine{00008\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{midi__to__tabs_8hpp_ac665ca39f51597334e93d87cd888e64a}{MAX\_WIDTH}}\ =\ 100;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00018\ std::vector<std::array<int,\ 3>>\ \mbox{\hyperlink{midi__to__tabs_8hpp_ade17f737913df49711baddeec40255f3}{read\_range}}(std::istream\&\ in);}
+\DoxyCodeLine{00031\ std::vector<std::array<int,\ 3>>\ \mbox{\hyperlink{midi__to__tabs_8hpp_a751f610f4238ed537db5f2dd75d76b44}{apply\_range}}(}
+\DoxyCodeLine{00032\ \ \ \ \ std::vector<std::array<int,\ 3>>\ ranges,}
+\DoxyCodeLine{00033\ \ \ \ \ std::vector<std::pair<int,\ int>>\ midi\_beats);}
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{midi__to__tabs_8hpp_af3369b6bd87a84ede140cd7d18592f0f}{generate\_tab}}(std::vector<std::array<int,\ 3>>\&\ notes,\ std::ostream\&\ out);}
+
+\end{DoxyCode}

@@ -1,0 +1,18 @@
+\doxysection{note\+\_\+segment.\+hpp}
+\hypertarget{note__segment_8hpp_source}{}\label{note__segment_8hpp_source}\index{include/note\_segment.hpp@{include/note\_segment.hpp}}
+\mbox{\hyperlink{note__segment_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pitch__detector_8hpp}{pitch\_detector.hpp}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_note_segment}{NoteSegment}}\ \{}
+\DoxyCodeLine{00014\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_note_segment_a2a250eab9d4a969dc66277a3f5c2b859}{frequency}};\ \ \ }
+\DoxyCodeLine{00015\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_note_segment_a04cf0aed5a0d86818b6eca5017c20939}{duration}};\ \ \ \ }
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00025\ std::vector<NoteSegment>\ \mbox{\hyperlink{note__segment_8hpp_a46094a10f5338689485b17c5b5d2195b}{extract\_note\_segments}}(}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<PitchResult>\&\ pitches,\ \textcolor{keywordtype}{float}\ sampleRate,}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{float}\ freqTolerance\ =\ 1.0f);}
+
+\end{DoxyCode}

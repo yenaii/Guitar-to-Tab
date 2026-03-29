@@ -1,0 +1,48 @@
+\doxysection{Audio\+Processor Class Reference}
+\hypertarget{class_audio_processor}{}\label{class_audio_processor}\index{AudioProcessor@{AudioProcessor}}
+
+
+Примерный пайплайн\+: декодирование, анализ, визуализация.  
+
+
+
+
+{\ttfamily \#include $<$input.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{class_audio_processor_a512dea968ecead970573d99e9e7ab19a}{process\+File}} (const std\+::string \&input\+File)
+\begin{DoxyCompactList}\small\item\em Обрабатывает файл\+: декодирует, анализирует, визуализирует. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Примерный пайплайн\+: декодирование, анализ, визуализация. 
+
+\label{doc-func-members}
+\Hypertarget{class_audio_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_audio_processor_a512dea968ecead970573d99e9e7ab19a}\index{AudioProcessor@{AudioProcessor}!processFile@{processFile}}
+\index{processFile@{processFile}!AudioProcessor@{AudioProcessor}}
+\doxysubsubsection{\texorpdfstring{processFile()}{processFile()}}
+{\footnotesize\ttfamily \label{class_audio_processor_a512dea968ecead970573d99e9e7ab19a} 
+std\+::vector$<$ float $>$ Audio\+Processor\+::process\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input\+File}{}\end{DoxyParamCaption})}
+
+
+
+Обрабатывает файл\+: декодирует, анализирует, визуализирует. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+File} & Путь к MP3-\/файлу. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор амплитуд первого канала. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{input_8hpp}{input.\+hpp}}\item 
+src/\mbox{\hyperlink{input_8cpp}{input.\+cpp}}\end{DoxyCompactItemize}

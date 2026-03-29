@@ -1,0 +1,24 @@
+\doxysection{frequency\+\_\+to\+\_\+midi.\+hpp}
+\hypertarget{frequency__to__midi_8hpp_source}{}\label{frequency__to__midi_8hpp_source}\index{include/frequency\_to\_midi.hpp@{include/frequency\_to\_midi.hpp}}
+\mbox{\hyperlink{frequency__to__midi_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{frequency__to__midi_8hpp_a4835c7d31882c332a34a9f40bed742e4}{min\_midi}}\ =\ 40;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{frequency__to__midi_8hpp_a1971afeb21622be4ee146cdaeec787ba}{max\_midi}}\ =\ 86;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_note_duration}{NoteDuration}}\ \{}
+\DoxyCodeLine{00019\ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{struct_note_duration_a48661554ebab4843e984142168ef74f0}{num}};}
+\DoxyCodeLine{00023\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_note_duration_a56103df3e6e635369c4a4706fe0397b8}{midi}};}
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_note_duration_af2cb1e790f7170fcb523b1c343c6c801}{duration}}\ =\ 0.0;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{frequency__to__midi_8hpp_a2a397b43dffeed0530143f172668f464}{frequency\_to\_midi}}(\textcolor{keywordtype}{double}\ freq);}
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{frequency__to__midi_8hpp_a5f95024b8d206a4b6a7a0b241a0179d4}{duration\_sum}}(\textcolor{keyword}{const}\ std::vector<NoteDuration>\&\ midi\_duration);}
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{frequency__to__midi_8hpp_a3a89860d625f88dad508211c0b934ded}{max\_duration}}(\textcolor{keyword}{const}\ std::vector<NoteDuration>\&\ midi\_duration);}
+\DoxyCodeLine{00064\ std::vector<std::pair<int,\ int>>\ \mbox{\hyperlink{frequency__to__midi_8hpp_ab1cef3d579869694069e5aac37f8e43a}{get\_midi\_beats}}(}
+\DoxyCodeLine{00065\ \ \ \ \ std::vector<std::pair<double,\ double>>\ frequency\_duration,\ \textcolor{keywordtype}{int}\ bpm);}
+
+\end{DoxyCode}

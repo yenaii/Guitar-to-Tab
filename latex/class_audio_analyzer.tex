@@ -1,0 +1,79 @@
+\doxysection{Audio\+Analyzer Class Reference}
+\hypertarget{class_audio_analyzer}{}\label{class_audio_analyzer}\index{AudioAnalyzer@{AudioAnalyzer}}
+
+
+Анализирует амплитуды PCM-\/сигнала, вычисляет спектр, максимум, минимум и среднее.  
+
+
+
+
+{\ttfamily \#include $<$input.\+hpp$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{Amplitude\+Analysis}}
+\begin{DoxyCompactList}\small\item\em Результаты анализа амплитуд\+: значения, максимум, минимум, среднее, спектр. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{Amplitude\+Analysis}} \mbox{\hyperlink{class_audio_analyzer_aa5ad490b0033375167cee776a06810b8}{analyze\+Amplitudes}} (const std\+::vector$<$ float $>$ \&samples, int channels)
+\begin{DoxyCompactList}\small\item\em Анализирует амплитуды (выделяет канал, считает максимум, минимум, среднее, спектр). \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_audio_analyzer_a2cb8c4f47d94fa2c38dec8a7b07f7643}{print\+Analysis\+Report}} (const \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{Amplitude\+Analysis}} \&analysis)
+\begin{DoxyCompactList}\small\item\em Печатает краткий отчёт по анализу амплитуд. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_audio_analyzer_a18f48209acd1c228987343e90febf80e}{visualize\+Waveform}} (const std\+::vector$<$ float $>$ \&amplitudes, size\+\_\+t width=80, size\+\_\+t height=20)
+\begin{DoxyCompactList}\small\item\em Визуализирует форму волны в консоли. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Анализирует амплитуды PCM-\/сигнала, вычисляет спектр, максимум, минимум и среднее. 
+
+\label{doc-func-members}
+\Hypertarget{class_audio_analyzer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_audio_analyzer_aa5ad490b0033375167cee776a06810b8}\index{AudioAnalyzer@{AudioAnalyzer}!analyzeAmplitudes@{analyzeAmplitudes}}
+\index{analyzeAmplitudes@{analyzeAmplitudes}!AudioAnalyzer@{AudioAnalyzer}}
+\doxysubsubsection{\texorpdfstring{analyzeAmplitudes()}{analyzeAmplitudes()}}
+{\footnotesize\ttfamily \label{class_audio_analyzer_aa5ad490b0033375167cee776a06810b8} 
+\mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{Audio\+Analyzer\+::\+Amplitude\+Analysis}} Audio\+Analyzer\+::analyze\+Amplitudes (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{samples}{, }\item[{int}]{channels}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Анализирует амплитуды (выделяет канал, считает максимум, минимум, среднее, спектр). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & Входные сэмплы (float). \\
+\hline
+{\em channels} & Количество каналов (1 — моно, 2 — стерео). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Структура с результатами анализа. 
+\end{DoxyReturn}
+\Hypertarget{class_audio_analyzer_a2cb8c4f47d94fa2c38dec8a7b07f7643}\index{AudioAnalyzer@{AudioAnalyzer}!printAnalysisReport@{printAnalysisReport}}
+\index{printAnalysisReport@{printAnalysisReport}!AudioAnalyzer@{AudioAnalyzer}}
+\doxysubsubsection{\texorpdfstring{printAnalysisReport()}{printAnalysisReport()}}
+{\footnotesize\ttfamily \label{class_audio_analyzer_a2cb8c4f47d94fa2c38dec8a7b07f7643} 
+void Audio\+Analyzer\+::print\+Analysis\+Report (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_audio_analyzer_1_1_amplitude_analysis}{Amplitude\+Analysis}} \&}]{analysis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Печатает краткий отчёт по анализу амплитуд. 
+
+\Hypertarget{class_audio_analyzer_a18f48209acd1c228987343e90febf80e}\index{AudioAnalyzer@{AudioAnalyzer}!visualizeWaveform@{visualizeWaveform}}
+\index{visualizeWaveform@{visualizeWaveform}!AudioAnalyzer@{AudioAnalyzer}}
+\doxysubsubsection{\texorpdfstring{visualizeWaveform()}{visualizeWaveform()}}
+{\footnotesize\ttfamily \label{class_audio_analyzer_a18f48209acd1c228987343e90febf80e} 
+void Audio\+Analyzer\+::visualize\+Waveform (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{amplitudes}{, }\item[{size\+\_\+t}]{width}{ = {\ttfamily 80}, }\item[{size\+\_\+t}]{height}{ = {\ttfamily 20}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Визуализирует форму волны в консоли. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{input_8hpp}{input.\+hpp}}\item 
+src/\mbox{\hyperlink{input_8cpp}{input.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\doxysection{src/midi\+\_\+to\+\_\+tabs.cpp File Reference}
+\hypertarget{midi__to__tabs_8cpp}{}\label{midi__to__tabs_8cpp}\index{src/midi\_to\_tabs.cpp@{src/midi\_to\_tabs.cpp}}
+{\ttfamily \#include "{}midi\+\_\+to\+\_\+tabs.\+hpp"{}}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::array$<$ int, 3 $>$ $>$ \mbox{\hyperlink{midi__to__tabs_8cpp_ade17f737913df49711baddeec40255f3}{read\+\_\+range}} (std\+::istream \&in)
+\begin{DoxyCompactList}\small\item\em Считывает диапазоны ладов и длительности из потока ввода. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::array$<$ int, 3 $>$ $>$ \mbox{\hyperlink{midi__to__tabs_8cpp_a751f610f4238ed537db5f2dd75d76b44}{apply\+\_\+range}} (std\+::vector$<$ std\+::array$<$ int, 3 $>$ $>$ ranges, std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ midi\+\_\+beats)
+\begin{DoxyCompactList}\small\item\em Применяет диапазоны ладов к MIDI-\/нотам и формирует ноты с указанием струны. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{midi__to__tabs_8cpp_af3369b6bd87a84ede140cd7d18592f0f}{generate\+\_\+tab}} (std\+::vector$<$ std\+::array$<$ int, 3 $>$ $>$ \&notes, std\+::ostream \&out)
+\begin{DoxyCompactList}\small\item\em Генерирует табулатуру по заданным нотам и выводит её в поток. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{midi__to__tabs_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{midi__to__tabs_8cpp_a751f610f4238ed537db5f2dd75d76b44}\index{midi\_to\_tabs.cpp@{midi\_to\_tabs.cpp}!apply\_range@{apply\_range}}
+\index{apply\_range@{apply\_range}!midi\_to\_tabs.cpp@{midi\_to\_tabs.cpp}}
+\doxysubsubsection{\texorpdfstring{apply\_range()}{apply\_range()}}
+{\footnotesize\ttfamily \label{midi__to__tabs_8cpp_a751f610f4238ed537db5f2dd75d76b44} 
+std\+::vector$<$ std\+::array$<$ int, 3 $>$ $>$ apply\+\_\+range (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::array$<$ int, 3 $>$ $>$}]{ranges}{, }\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$}]{midi\+\_\+beats}{}\end{DoxyParamCaption})}
+
+
+
+Применяет диапазоны ладов к MIDI-\/нотам и формирует ноты с указанием струны. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ranges} & Вектор диапазонов в формате \mbox{[}начальный лад, конечный лад, длительность\mbox{]}. \\
+\hline
+{\em midi\+\_\+beats} & Вектор пар \texorpdfstring{$<$}{<}MIDI-\/номер, длительность\texorpdfstring{$>$}{>}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::array$<$int, 3$>$$>$ Вектор тройных значений\+: струна, лад, длительность (в 16-\/ых долях). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & При недопустимых значениях или несовпадении диапазона. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{midi__to__tabs_8cpp_af3369b6bd87a84ede140cd7d18592f0f}\index{midi\_to\_tabs.cpp@{midi\_to\_tabs.cpp}!generate\_tab@{generate\_tab}}
+\index{generate\_tab@{generate\_tab}!midi\_to\_tabs.cpp@{midi\_to\_tabs.cpp}}
+\doxysubsubsection{\texorpdfstring{generate\_tab()}{generate\_tab()}}
+{\footnotesize\ttfamily \label{midi__to__tabs_8cpp_af3369b6bd87a84ede140cd7d18592f0f} 
+void generate\+\_\+tab (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::array$<$ int, 3 $>$ $>$ \&}]{notes}{, }\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption})}
+
+
+
+Генерирует табулатуру по заданным нотам и выводит её в поток. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em notes} & Вектор из троек\+: струна, лад, длительность (в 16-\/х долях). \\
+\hline
+{\em out} & Поток вывода. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & При ошибках в структуре нот. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{midi__to__tabs_8cpp_ade17f737913df49711baddeec40255f3}\index{midi\_to\_tabs.cpp@{midi\_to\_tabs.cpp}!read\_range@{read\_range}}
+\index{read\_range@{read\_range}!midi\_to\_tabs.cpp@{midi\_to\_tabs.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_range()}{read\_range()}}
+{\footnotesize\ttfamily \label{midi__to__tabs_8cpp_ade17f737913df49711baddeec40255f3} 
+std\+::vector$<$ std\+::array$<$ int, 3 $>$ $>$ read\+\_\+range (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in}{}\end{DoxyParamCaption})}
+
+
+
+Считывает диапазоны ладов и длительности из потока ввода. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Поток ввода. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::array$<$int, 3$>$$>$ Вектор тройных значений\+: начальный лад, конечный лад, количество долей. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Если не удаётся распарсить строку. \\
+\hline
+\end{DoxyExceptions}

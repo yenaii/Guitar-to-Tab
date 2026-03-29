@@ -1,0 +1,51 @@
+\doxysection{include/note\+\_\+segment.hpp File Reference}
+\hypertarget{note__segment_8hpp}{}\label{note__segment_8hpp}\index{include/note\_segment.hpp@{include/note\_segment.hpp}}
+
+
+Модуль для группировки извлечённых высот в музыкальные сегменты (ноты).  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include "{}pitch\+\_\+detector.\+hpp"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_note_segment}{Note\+Segment}}
+\begin{DoxyCompactList}\small\item\em Описывает сегмент (ноту)\+: частота и длительность звучания. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_note_segment}{Note\+Segment}} $>$ \mbox{\hyperlink{note__segment_8hpp_a46094a10f5338689485b17c5b5d2195b}{extract\+\_\+note\+\_\+segments}} (const std\+::vector$<$ \mbox{\hyperlink{struct_pitch_result}{Pitch\+Result}} $>$ \&pitches, float sample\+Rate, float freq\+Tolerance=1.\+0f)
+\begin{DoxyCompactList}\small\item\em Группирует последовательные окна с одинаковой (или близкой) частотой в сегменты. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Модуль для группировки извлечённых высот в музыкальные сегменты (ноты). 
+
+
+
+\label{doc-func-members}
+\Hypertarget{note__segment_8hpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{note__segment_8hpp_a46094a10f5338689485b17c5b5d2195b}\index{note\_segment.hpp@{note\_segment.hpp}!extract\_note\_segments@{extract\_note\_segments}}
+\index{extract\_note\_segments@{extract\_note\_segments}!note\_segment.hpp@{note\_segment.hpp}}
+\doxysubsubsection{\texorpdfstring{extract\_note\_segments()}{extract\_note\_segments()}}
+{\footnotesize\ttfamily \label{note__segment_8hpp_a46094a10f5338689485b17c5b5d2195b} 
+std\+::vector$<$ \mbox{\hyperlink{struct_note_segment}{Note\+Segment}} $>$ extract\+\_\+note\+\_\+segments (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_pitch_result}{Pitch\+Result}} $>$ \&}]{pitches}{, }\item[{float}]{sample\+Rate}{, }\item[{float}]{freq\+Tolerance}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+
+
+Группирует последовательные окна с одинаковой (или близкой) частотой в сегменты. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitches} & Результаты pitch detection (\doxylink{struct_pitch_result}{Pitch\+Result}). \\
+\hline
+{\em sample\+Rate} & Частота дискретизации. \\
+\hline
+{\em freq\+Tolerance} & Порог для объединения частот (Гц). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор сегментов (частота, длительность). 
+\end{DoxyReturn}

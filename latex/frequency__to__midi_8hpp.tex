@@ -1,0 +1,138 @@
+\doxysection{include/frequency\+\_\+to\+\_\+midi.hpp File Reference}
+\hypertarget{frequency__to__midi_8hpp}{}\label{frequency__to__midi_8hpp}\index{include/frequency\_to\_midi.hpp@{include/frequency\_to\_midi.hpp}}
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_note_duration}{Note\+Duration}}
+\begin{DoxyCompactList}\small\item\em Структура, описывающая одну MIDI-\/ноту с её длительностью. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{frequency__to__midi_8hpp_a2a397b43dffeed0530143f172668f464}{frequency\+\_\+to\+\_\+midi}} (double freq)
+\begin{DoxyCompactList}\small\item\em Преобразует частоту в значение MIDI. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{frequency__to__midi_8hpp_a5f95024b8d206a4b6a7a0b241a0179d4}{duration\+\_\+sum}} (const std\+::vector$<$ \mbox{\hyperlink{struct_note_duration}{Note\+Duration}} $>$ \&midi\+\_\+duration)
+\begin{DoxyCompactList}\small\item\em Суммирует длительности всех нот в векторе. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{frequency__to__midi_8hpp_a3a89860d625f88dad508211c0b934ded}{max\+\_\+duration}} (const std\+::vector$<$ \mbox{\hyperlink{struct_note_duration}{Note\+Duration}} $>$ \&midi\+\_\+duration)
+\begin{DoxyCompactList}\small\item\em Находит индекс ноты с максимальной длительностью. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \mbox{\hyperlink{frequency__to__midi_8hpp_ab1cef3d579869694069e5aac37f8e43a}{get\+\_\+midi\+\_\+beats}} (std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ frequency\+\_\+duration, int bpm)
+\begin{DoxyCompactList}\small\item\em Преобразует пары частота-\/длительность в пары MIDI-\/доля (в 16-\/ых). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{frequency__to__midi_8hpp_a4835c7d31882c332a34a9f40bed742e4}{min\+\_\+midi}} = 40
+\item 
+const int \mbox{\hyperlink{frequency__to__midi_8hpp_a1971afeb21622be4ee146cdaeec787ba}{max\+\_\+midi}} = 86
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{frequency__to__midi_8hpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{frequency__to__midi_8hpp_a5f95024b8d206a4b6a7a0b241a0179d4}\index{frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}!duration\_sum@{duration\_sum}}
+\index{duration\_sum@{duration\_sum}!frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}}
+\doxysubsubsection{\texorpdfstring{duration\_sum()}{duration\_sum()}}
+{\footnotesize\ttfamily \label{frequency__to__midi_8hpp_a5f95024b8d206a4b6a7a0b241a0179d4} 
+double duration\+\_\+sum (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_note_duration}{Note\+Duration}} $>$ \&}]{midi\+\_\+duration}{}\end{DoxyParamCaption})}
+
+
+
+Суммирует длительности всех нот в векторе. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em midi\+\_\+duration} & Вектор структур \doxylink{struct_note_duration}{Note\+Duration}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Суммарная длительность. 
+\end{DoxyReturn}
+\Hypertarget{frequency__to__midi_8hpp_a2a397b43dffeed0530143f172668f464}\index{frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}!frequency\_to\_midi@{frequency\_to\_midi}}
+\index{frequency\_to\_midi@{frequency\_to\_midi}!frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}}
+\doxysubsubsection{\texorpdfstring{frequency\_to\_midi()}{frequency\_to\_midi()}}
+{\footnotesize\ttfamily \label{frequency__to__midi_8hpp_a2a397b43dffeed0530143f172668f464} 
+int frequency\+\_\+to\+\_\+midi (\begin{DoxyParamCaption}\item[{double}]{freq}{}\end{DoxyParamCaption})}
+
+
+
+Преобразует частоту в значение MIDI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & Частота в герцах. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Номер MIDI-\/ноты или -\/1 для паузы. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Если частота отрицательна или вне диапазона гитары. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{frequency__to__midi_8hpp_ab1cef3d579869694069e5aac37f8e43a}\index{frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}!get\_midi\_beats@{get\_midi\_beats}}
+\index{get\_midi\_beats@{get\_midi\_beats}!frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}}
+\doxysubsubsection{\texorpdfstring{get\_midi\_beats()}{get\_midi\_beats()}}
+{\footnotesize\ttfamily \label{frequency__to__midi_8hpp_ab1cef3d579869694069e5aac37f8e43a} 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ get\+\_\+midi\+\_\+beats (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$}]{frequency\+\_\+duration}{, }\item[{int}]{bpm}{}\end{DoxyParamCaption})}
+
+
+
+Преобразует пары частота-\/длительность в пары MIDI-\/доля (в 16-\/ых). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency\+\_\+duration} & Вектор пар \texorpdfstring{$<$}{<}частота, длительность\texorpdfstring{$>$}{>}. \\
+\hline
+{\em bpm} & Темп в ударах в минуту. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::pair$<$int, int$>$$>$ Вектор пар \texorpdfstring{$<$}{<}MIDI, длительность в 16-\/ых\texorpdfstring{$>$}{>}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Если BPM ≤ 0 или есть длительность ≤ 0. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{frequency__to__midi_8hpp_a3a89860d625f88dad508211c0b934ded}\index{frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}!max\_duration@{max\_duration}}
+\index{max\_duration@{max\_duration}!frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}}
+\doxysubsubsection{\texorpdfstring{max\_duration()}{max\_duration()}}
+{\footnotesize\ttfamily \label{frequency__to__midi_8hpp_a3a89860d625f88dad508211c0b934ded} 
+int max\+\_\+duration (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_note_duration}{Note\+Duration}} $>$ \&}]{midi\+\_\+duration}{}\end{DoxyParamCaption})}
+
+
+
+Находит индекс ноты с максимальной длительностью. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em midi\+\_\+duration} & Вектор структур \doxylink{struct_note_duration}{Note\+Duration}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Индекс ноты с максимальной длительностью. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Если вектор пуст. \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-var-members}
+\Hypertarget{frequency__to__midi_8hpp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{frequency__to__midi_8hpp_a1971afeb21622be4ee146cdaeec787ba}\index{frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}!max\_midi@{max\_midi}}
+\index{max\_midi@{max\_midi}!frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}}
+\doxysubsubsection{\texorpdfstring{max\_midi}{max\_midi}}
+{\footnotesize\ttfamily \label{frequency__to__midi_8hpp_a1971afeb21622be4ee146cdaeec787ba} 
+const int max\+\_\+midi = 86}
+
+\Hypertarget{frequency__to__midi_8hpp_a4835c7d31882c332a34a9f40bed742e4}\index{frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}!min\_midi@{min\_midi}}
+\index{min\_midi@{min\_midi}!frequency\_to\_midi.hpp@{frequency\_to\_midi.hpp}}
+\doxysubsubsection{\texorpdfstring{min\_midi}{min\_midi}}
+{\footnotesize\ttfamily \label{frequency__to__midi_8hpp_a4835c7d31882c332a34a9f40bed742e4} 
+const int min\+\_\+midi = 40}
+

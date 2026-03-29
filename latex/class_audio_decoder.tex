@@ -1,0 +1,75 @@
+\doxysection{Audio\+Decoder Class Reference}
+\hypertarget{class_audio_decoder}{}\label{class_audio_decoder}\index{AudioDecoder@{AudioDecoder}}
+
+
+Декодирует MP3-\/файлы в PCM-\/амплитуды (float).  
+
+
+
+
+{\ttfamily \#include $<$input.\+hpp$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_audio_decoder_1_1_audio_data}{Audio\+Data}}
+\begin{DoxyCompactList}\small\item\em Структура с результатом декодирования\+: сэмплы, частота, каналы, количество сэмплов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_audio_decoder_ad0b6f26f55fc54e474b38ee0f7b7b786}{Audio\+Decoder}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор, инициализирует декодер. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_audio_decoder_1_1_audio_data}{Audio\+Data}} \mbox{\hyperlink{class_audio_decoder_aec8d79ddc6136daf37db0ed9cf66fad8}{load\+MP3}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Загружает MP3-\/файл и возвращает декодированные данные. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Декодирует MP3-\/файлы в PCM-\/амплитуды (float). 
+
+\label{doc-constructors}
+\Hypertarget{class_audio_decoder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_audio_decoder_ad0b6f26f55fc54e474b38ee0f7b7b786}\index{AudioDecoder@{AudioDecoder}!AudioDecoder@{AudioDecoder}}
+\index{AudioDecoder@{AudioDecoder}!AudioDecoder@{AudioDecoder}}
+\doxysubsubsection{\texorpdfstring{AudioDecoder()}{AudioDecoder()}}
+{\footnotesize\ttfamily \label{class_audio_decoder_ad0b6f26f55fc54e474b38ee0f7b7b786} 
+Audio\+Decoder\+::\+Audio\+Decoder (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор, инициализирует декодер. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_audio_decoder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_audio_decoder_aec8d79ddc6136daf37db0ed9cf66fad8}\index{AudioDecoder@{AudioDecoder}!loadMP3@{loadMP3}}
+\index{loadMP3@{loadMP3}!AudioDecoder@{AudioDecoder}}
+\doxysubsubsection{\texorpdfstring{loadMP3()}{loadMP3()}}
+{\footnotesize\ttfamily \label{class_audio_decoder_aec8d79ddc6136daf37db0ed9cf66fad8} 
+\mbox{\hyperlink{struct_audio_decoder_1_1_audio_data}{Audio\+Decoder\+::\+Audio\+Data}} Audio\+Decoder\+::load\+MP3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Загружает MP3-\/файл и возвращает декодированные данные. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Путь к MP3-\/файлу. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_audio_decoder_1_1_audio_data}{Audio\+Data} с PCM-\/сэмплами. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & при ошибке открытия или декодирования. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{input_8hpp}{input.\+hpp}}\item 
+src/\mbox{\hyperlink{input_8cpp}{input.\+cpp}}\end{DoxyCompactItemize}

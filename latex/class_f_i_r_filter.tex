@@ -1,0 +1,50 @@
+\doxysection{FIRFilter Class Reference}
+\hypertarget{class_f_i_r_filter}{}\label{class_f_i_r_filter}\index{FIRFilter@{FIRFilter}}
+
+
+Реализует FIR-\/фильтр для подавления шумов в аудиосигнале.  
+
+
+
+
+{\ttfamily \#include $<$fir\+\_\+filter.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ float $>$ \mbox{\hyperlink{class_f_i_r_filter_a18f40ab56e4f468544d23e1013abbfe9}{apply}} (const std\+::vector$<$ float $>$ \&input, int window\+Size)
+\begin{DoxyCompactList}\small\item\em Применяет FIR-\/фильтр к сигналу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Реализует FIR-\/фильтр для подавления шумов в аудиосигнале. 
+
+\label{doc-func-members}
+\Hypertarget{class_f_i_r_filter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_f_i_r_filter_a18f40ab56e4f468544d23e1013abbfe9}\index{FIRFilter@{FIRFilter}!apply@{apply}}
+\index{apply@{apply}!FIRFilter@{FIRFilter}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily \label{class_f_i_r_filter_a18f40ab56e4f468544d23e1013abbfe9} 
+std\+::vector$<$ float $>$ FIRFilter\+::apply (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{input}{, }\item[{int}]{window\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Применяет FIR-\/фильтр к сигналу. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Входной сигнал (амплитуды). \\
+\hline
+{\em window\+Size} & Размер окна усреднения (количество сэмплов). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Отфильтрованный сигнал (амплитуды). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{fir__filter_8hpp}{fir\+\_\+filter.\+hpp}}\item 
+src/\mbox{\hyperlink{fir__filter_8cpp}{fir\+\_\+filter.\+cpp}}\end{DoxyCompactItemize}

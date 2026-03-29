@@ -1,0 +1,56 @@
+\doxysection{Pitch\+Detector Class Reference}
+\hypertarget{class_pitch_detector}{}\label{class_pitch_detector}\index{PitchDetector@{PitchDetector}}
+
+
+Реализует алгоритм YIN для извлечения основного тона из аудиосигнала.  
+
+
+
+
+{\ttfamily \#include $<$pitch\+\_\+detector.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{struct_pitch_result}{Pitch\+Result}} $>$ \mbox{\hyperlink{class_pitch_detector_a6d3133195f7c3ae6812d32a3b6f83549}{detect\+YIN}} (const std\+::vector$<$ float $>$ \&signal, float sample\+Rate, int window\+Size, int hop\+Size, float threshold=0.\+15f)
+\begin{DoxyCompactList}\small\item\em Извлекает основную частоту (pitch) с помощью YIN-\/алгоритма. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Реализует алгоритм YIN для извлечения основного тона из аудиосигнала. 
+
+\label{doc-func-members}
+\Hypertarget{class_pitch_detector_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pitch_detector_a6d3133195f7c3ae6812d32a3b6f83549}\index{PitchDetector@{PitchDetector}!detectYIN@{detectYIN}}
+\index{detectYIN@{detectYIN}!PitchDetector@{PitchDetector}}
+\doxysubsubsection{\texorpdfstring{detectYIN()}{detectYIN()}}
+{\footnotesize\ttfamily \label{class_pitch_detector_a6d3133195f7c3ae6812d32a3b6f83549} 
+std\+::vector$<$ \mbox{\hyperlink{struct_pitch_result}{Pitch\+Result}} $>$ Pitch\+Detector\+::detect\+YIN (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ float $>$ \&}]{signal}{, }\item[{float}]{sample\+Rate}{, }\item[{int}]{window\+Size}{, }\item[{int}]{hop\+Size}{, }\item[{float}]{threshold}{ = {\ttfamily 0.15f}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Извлекает основную частоту (pitch) с помощью YIN-\/алгоритма. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signal} & Входной сигнал (моно). \\
+\hline
+{\em sample\+Rate} & Частота дискретизации. \\
+\hline
+{\em window\+Size} & Размер окна (обычно 1024-\/2048). \\
+\hline
+{\em hop\+Size} & Шаг окна (обычно 256-\/512). \\
+\hline
+{\em threshold} & Порог для YIN (0.\+1-\/0.\+2). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор \doxylink{struct_pitch_result}{Pitch\+Result} для каждого окна. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{pitch__detector_8hpp}{pitch\+\_\+detector.\+hpp}}\item 
+src/\mbox{\hyperlink{pitch__detector_8cpp}{pitch\+\_\+detector.\+cpp}}\end{DoxyCompactItemize}
