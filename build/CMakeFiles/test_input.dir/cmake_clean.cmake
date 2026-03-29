@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/test_input.dir/tests/test_input.cpp.obj"
+  "CMakeFiles/test_input.dir/tests/test_input.cpp.obj.d"
+  "test_input.exe"
+  "test_input.exe.manifest"
+  "test_input.lib"
+  "test_input.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/test_input.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

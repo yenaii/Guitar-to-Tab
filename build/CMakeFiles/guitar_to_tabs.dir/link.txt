@@ -1,0 +1,2 @@
+D:\LLVM\bin\llvm-ar.exe qc guitar_to_tabs.lib CMakeFiles/guitar_to_tabs.dir/src/input.cpp.obj CMakeFiles/guitar_to_tabs.dir/src/frequency_to_midi.cpp.obj CMakeFiles/guitar_to_tabs.dir/src/midi_to_tabs.cpp.obj CMakeFiles/guitar_to_tabs.dir/src/fir_filter.cpp.obj CMakeFiles/guitar_to_tabs.dir/src/pitch_detector.cpp.obj CMakeFiles/guitar_to_tabs.dir/src/note_segment.cpp.obj
+D:\LLVM\bin\llvm-ranlib.exe guitar_to_tabs.lib
