@@ -1,0 +1,133 @@
+Start testing: Jun 17 13:27 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/6 Testing: GuitarToTabsInputTests
+1/6 Test: GuitarToTabsInputTests
+Command: "D:/Guitar-To-Tabs/build/test_input.exe"
+Directory: D:/Guitar-To-Tabs/build
+"GuitarToTabsInputTests" start time: Jun 17 13:27 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.12"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:    4 |    4 passed | 0 failed | 0 skipped
+[doctest] assertions: 2027 | 2027 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"GuitarToTabsInputTests" end time: Jun 17 13:27 RTZ 2 (çèìà)
+"GuitarToTabsInputTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/6 Testing: GuitarToTabsFIRFilterTests
+2/6 Test: GuitarToTabsFIRFilterTests
+Command: "D:/Guitar-To-Tabs/build/test_fir_filter.exe"
+Directory: D:/Guitar-To-Tabs/build
+"GuitarToTabsFIRFilterTests" start time: Jun 17 13:27 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.12"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:   3 |   3 passed | 0 failed | 0 skipped
+[doctest] assertions: 103 | 103 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"GuitarToTabsFIRFilterTests" end time: Jun 17 13:27 RTZ 2 (çèìà)
+"GuitarToTabsFIRFilterTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: GuitarToTabsPitchDetectorTests
+3/6 Test: GuitarToTabsPitchDetectorTests
+Command: "D:/Guitar-To-Tabs/build/test_pitch_detector.exe"
+Directory: D:/Guitar-To-Tabs/build
+"GuitarToTabsPitchDetectorTests" start time: Jun 17 13:27 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.12"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:   3 |   3 passed | 0 failed | 0 skipped
+[doctest] assertions: 100 | 100 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.63 sec
+----------------------------------------------------------
+Test Passed.
+"GuitarToTabsPitchDetectorTests" end time: Jun 17 13:27 RTZ 2 (çèìà)
+"GuitarToTabsPitchDetectorTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/6 Testing: GuitarToTabsNoteSegmentTests
+4/6 Test: GuitarToTabsNoteSegmentTests
+Command: "D:/Guitar-To-Tabs/build/test_note_segment.exe"
+Directory: D:/Guitar-To-Tabs/build
+"GuitarToTabsNoteSegmentTests" start time: Jun 17 13:27 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.12"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases: 1 | 1 passed | 0 failed | 0 skipped
+[doctest] assertions: 7 | 7 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"GuitarToTabsNoteSegmentTests" end time: Jun 17 13:27 RTZ 2 (çèìà)
+"GuitarToTabsNoteSegmentTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: GuitarToTabsFrequencyToMidiTests
+5/6 Test: GuitarToTabsFrequencyToMidiTests
+Command: "D:/Guitar-To-Tabs/build/test_frequency_to_midi.exe"
+Directory: D:/Guitar-To-Tabs/build
+"GuitarToTabsFrequencyToMidiTests" start time: Jun 17 13:27 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.12"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:  7 |  7 passed | 0 failed | 0 skipped
+[doctest] assertions: 23 | 23 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"GuitarToTabsFrequencyToMidiTests" end time: Jun 17 13:27 RTZ 2 (çèìà)
+"GuitarToTabsFrequencyToMidiTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: GuitarToTabsMidiToTabsTests
+6/6 Test: GuitarToTabsMidiToTabsTests
+Command: "D:/Guitar-To-Tabs/build/test_midi_to_tabs.exe"
+Directory: D:/Guitar-To-Tabs/build
+"GuitarToTabsMidiToTabsTests" start time: Jun 17 13:27 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.12"
+[doctest] run with "--help" for options
+Enter fret ranges: [min.fret max.fret duration_in_bar] (print 'stop' to end): 
+Enter fret ranges: [min.fret max.fret duration_in_bar] (print 'stop' to end): 
+Enter fret ranges: [min.fret max.fret duration_in_bar] (print 'stop' to end): 
+Enter fret ranges: [min.fret max.fret duration_in_bar] (print 'stop' to end): 
+===============================================================================
+[doctest] test cases:  6 |  6 passed | 0 failed | 0 skipped
+[doctest] assertions: 19 | 19 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"GuitarToTabsMidiToTabsTests" end time: Jun 17 13:27 RTZ 2 (çèìà)
+"GuitarToTabsMidiToTabsTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 17 13:27 RTZ 2 (çèìà)

@@ -1,0 +1,7 @@
+GuitarToTabsInputTests 1 0.0277402
+GuitarToTabsFIRFilterTests 1 0.0255049
+GuitarToTabsPitchDetectorTests 1 0.626362
+GuitarToTabsNoteSegmentTests 1 0.0228789
+GuitarToTabsFrequencyToMidiTests 1 0.0313913
+GuitarToTabsMidiToTabsTests 1 0.0293297
+---
