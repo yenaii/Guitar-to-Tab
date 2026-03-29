@@ -1,0 +1,2 @@
+D:\LLVM\bin\llvm-ar.exe qc doctest_with_main.lib CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.obj
+D:\LLVM\bin\llvm-ranlib.exe doctest_with_main.lib

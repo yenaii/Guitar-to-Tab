@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/CMakeFiles/doctest-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-build.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-download.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-install.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-patch.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-test.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/doctest-subbuild/doctest-populate-prefix/src/doctest-populate-stamp/doctest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"doctest-populate"
+		],
+		"name" : "doctest-populate"
+	}
+}

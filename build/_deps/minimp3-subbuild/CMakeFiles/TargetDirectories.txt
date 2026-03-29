@@ -1,0 +1,3 @@
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/minimp3-populate.dir
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/edit_cache.dir
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/rebuild_cache.dir

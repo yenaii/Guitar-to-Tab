@@ -1,0 +1,14 @@
+# Target labels
+ minimp3-populate
+# Source files and their labels
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/minimp3-populate
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/minimp3-populate.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/minimp3-populate-complete.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-build.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-configure.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-download.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-install.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-mkdir.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-patch.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-test.rule
+D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-update.rule

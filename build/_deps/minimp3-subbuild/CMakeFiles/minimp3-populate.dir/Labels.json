@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/minimp3-populate"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/minimp3-populate.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/CMakeFiles/minimp3-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-build.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-download.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-install.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-patch.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-test.rule"
+		},
+		{
+			"file" : "D:/Guitar-To-Tabs/build/_deps/minimp3-subbuild/minimp3-populate-prefix/src/minimp3-populate-stamp/minimp3-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"minimp3-populate"
+		],
+		"name" : "minimp3-populate"
+	}
+}
